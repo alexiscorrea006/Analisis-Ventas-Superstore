@@ -85,6 +85,8 @@ Con la base de datos totalmente depurada y enriquecida, diseñé un reporte inte
 
 * **Dashboard de Productos:** Unidades vendidas por categoría, tiempos de envío y distribución logística.
 
+<img width="1600" height="900" alt="Dashboard" src="https://github.com/user-attachments/assets/cde9968a-6c00-44ce-86fc-67467160cf43" />
+
 ### 🔗 Enlace al Dashboard Interactivo
 👉 **Hacer clic aquí para ver el Dashboard completo en Looker Studio**:https://datastudio.google.com/reporting/e79dd49d-d532-40f6-8af0-afcea7d978ff
 
