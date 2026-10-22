@@ -65,3 +65,37 @@ df['Codigo_Postal'] = df['Codigo_Postal'].astype('Int64')
 # 7. Exportar el DataFrame corregido a Excel
 ruta_salida = r"C:\Users\Win10\Desktop\Esscritorio\Portafolio\Base_de_datos_corregida.xlsx"
 df.to_excel(ruta_salida, index=False)
+```
+---
+### 2. Enriquecimiento y Transformación (Excel / Power Query)
+Una vez exportado el archivo limpio desde Python, trabajé sobre el Excel para asegurar la correcta estructuración y formato de las celdas (moneda, fechas y tipos de datos), incorporando nuevas columnas calculadas hacia la derecha de la matriz (Año, Mes, Bimestre y Días de Envío) que facilitaron la agregación de datos para el reporte.
+<img width="1891" height="1003" alt="fotito (agrego columnas)" src="https://github.com/user-attachments/assets/4b6c64f6-e017-4968-85db-daaeb850d0cb" />
+
+
+
+
+
+
+### 3. Visualización y Dashboard (Looker Studio)
+Con la base de datos totalmente depurada y enriquecida, diseñé un reporte interactivo en Looker Studio estructurado a través de un menú principal (Índice) que se divide en tres vistas analíticas principales:
+
+* **Dashboard de Ventas:** Evolución temporal, composición de la facturación por categorías y comportamiento por bimestres.
+
+* **Dashboard de Clientes:** Mapa de calor geográfico, distribución por regiones, evolución de la base activa y segmentación de cuentas principales.
+
+* **Dashboard de Productos:** Unidades vendidas por categoría, tiempos de envío y distribución logística.
+
+### 🔗 Enlace al Dashboard Interactivo
+👉 **Hacer clic aquí para ver el Dashboard completo en Looker Studio**:https://datastudio.google.com/reporting/e79dd49d-d532-40f6-8af0-afcea7d978ff
+
+
+
+
+
+
+
+
+
+
+
+
