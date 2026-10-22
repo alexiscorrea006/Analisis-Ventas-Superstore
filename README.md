@@ -66,15 +66,15 @@ df['Codigo_Postal'] = df['Codigo_Postal'].astype('Int64')
 ruta_salida = r"C:\Users\Win10\Desktop\Esscritorio\Portafolio\Base_de_datos_corregida.xlsx"
 df.to_excel(ruta_salida, index=False)
 ```
+* **Detección y aislamiento de valores nulos:** Durante la validación inicial del DataFrame, el script permitió identificar 11 registros con valores faltantes en la columna `Codigo_Postal` (correspondientes a la ciudad de Burlington). Esto se aisló en DataFrames específicos para su posterior imputación y corrección automática:
+
+<img width="1183" height="955" alt="fotito 2" src="https://github.com/user-attachments/assets/082423f5-0534-499f-8b3d-ebbe40b181cf" />
+
 ---
 ### 2. Enriquecimiento y Transformación (Excel / Power Query)
 Una vez exportado el archivo limpio desde Python, trabajé sobre el Excel para asegurar la correcta estructuración y formato de las celdas (moneda, fechas y tipos de datos), incorporando nuevas columnas calculadas hacia la derecha de la matriz (Año, Mes, Bimestre y Días de Envío) que facilitaron la agregación de datos para el reporte.
+
 <img width="1891" height="1003" alt="fotito (agrego columnas)" src="https://github.com/user-attachments/assets/4b6c64f6-e017-4968-85db-daaeb850d0cb" />
-
-
-
-
-
 
 ### 3. Visualización y Dashboard (Looker Studio)
 Con la base de datos totalmente depurada y enriquecida, diseñé un reporte interactivo en Looker Studio estructurado a través de un menú principal (Índice) que se divide en tres vistas analíticas principales:
@@ -88,7 +88,19 @@ Con la base de datos totalmente depurada y enriquecida, diseñé un reporte inte
 ### 🔗 Enlace al Dashboard Interactivo
 👉 **Hacer clic aquí para ver el Dashboard completo en Looker Studio**:https://datastudio.google.com/reporting/e79dd49d-d532-40f6-8af0-afcea7d978ff
 
+### Principales Hallazgos (Insights)
+* **Ventas:** Crecimiento anual sostenido con una marcada concentración de la facturación en el último cuatrimestre (51,6%), liderado por la categoría Furniture (48%). Se detectó una leve desaceleración en el ticket promedio.
 
+* **Clientes:** Base activa en constante crecimiento (+8,66% interanual) con una cartera saludable y baja dependencia de cuentas grandes (el Top 1 representa solo el 2,2%).
+
+* **Productos y Logística:** El método de envío Standard Class concentra la mayor cantidad de entregas con un promedio de 5 días, identificando picos de demanda importantes en los bimestres finales del año.
+
+### Conclusiones y Recomendaciones de Negocio
+* **Optimización de Stock:** Reforzar inventarios y campañas publicitarias antes del 5° y 6° bimestre para soportar el pico de demanda.
+
+* **Estrategia de Fidelización:** Proteger al Top 10 de cuentas con un programa VIP y expandir esfuerzos de captación en regiones de menor volumen comercial (como la región South).
+
+* **Venta Cruzada:** Impulsar promociones combinadas entre la categoría líder (Furniture) y las demás líneas de productos para equilibrar las ventas en el primer cuatrimestre.
 
 
 
